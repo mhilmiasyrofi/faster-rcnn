@@ -31,12 +31,7 @@ def train_kitti():
     # cfg.rot_90 = True
     cfg.num_rois = 4
     cfg.base_net_weights = os.path.join('model/', nn.get_weight_path())
-
-    # TODO: the only file should to be change for other data to train
-    # cfg.model_path = './model/kitti_frcnn_last.hdf5'
-    cfg.model_path = 'model/resnet50_weights_tf_dim_ordering_tf_kernels_notop.h5'
-    cfg.simple_label_file = 'simple_label.txt'
-
+    
     all_images, classes_count, class_mapping = get_data(cfg.simple_label_file)
 
     if 'bg' not in classes_count:
@@ -113,7 +108,7 @@ def train_kitti():
     model_all.compile(optimizer='sgd', loss='mae')
 #
     # epoch_length = 1000
-    epoch_length = 15
+    epoch_length = 3661
     num_epochs = int(cfg.num_epochs)
     iter_num = 0
 

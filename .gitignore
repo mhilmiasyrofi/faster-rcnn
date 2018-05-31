@@ -95,3 +95,6 @@ ENV/
 *.hdf5
 
 .idea/
+
+images/
+results_images/

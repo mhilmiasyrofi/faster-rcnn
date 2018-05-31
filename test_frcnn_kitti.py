@@ -86,7 +86,7 @@ def predict_single_image(img_path, model_rpn, model_classifier_only, cfg, class_
     # convert from (x1,y1,x2,y2) to (x,y,w,h)
     result[:, 2] -= result[:, 0]
     result[:, 3] -= result[:, 1]
-    bbox_threshold = 0.7
+    bbox_threshold = 0.85
     # apply the spatial pyramid pooling to the proposed regions
     boxes = dict()
     for jk in range(result.shape[0] // cfg.num_rois + 1):
