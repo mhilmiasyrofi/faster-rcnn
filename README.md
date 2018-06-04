@@ -1,6 +1,6 @@
 # Keras Faster-RCNN
 
-> this is a very userful implementation of faster-rcnn based on tensorflow and keras, the model is very clear and just saved in .h5 file, out of box to use, and easy to train on other data set with full support. This code is developed from https://github.com/jinfagang/keras_frcnn
+> this is a very userful implementation of Faster-RCNN based on tensorflow and keras, the model is very clear and just saved in .h5 file, out of box to use, and easy to train on other data set with full support. This code is developed from https://github.com/jinfagang/keras_frcnn
 
 ## Requirements
 Basically, this code supports both python2.7 and python3.5, the following package should installed:
